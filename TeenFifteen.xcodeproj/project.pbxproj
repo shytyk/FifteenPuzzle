@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F974752C1C1CAAF50039D437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974752B1C1CAAF50039D437 /* AppDelegate.swift */; };
+		F974752E1C1CAAF50039D437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974752D1C1CAAF50039D437 /* ViewController.swift */; };
+		F97475311C1CAAF50039D437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F974752F1C1CAAF50039D437 /* Main.storyboard */; };
+		F97475331C1CAAF50039D437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97475321C1CAAF50039D437 /* Assets.xcassets */; };
+		F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F97475281C1CAAF50039D437 /* TeenFifteen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenFifteen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F974752B1C1CAAF50039D437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F974752D1C1CAAF50039D437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F97475301C1CAAF50039D437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F97475321C1CAAF50039D437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F97475351C1CAAF50039D437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F97475371C1CAAF50039D437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F97475251C1CAAF50039D437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F974751F1C1CAAF50039D437 = {
+			isa = PBXGroup;
+			children = (
+				F974752A1C1CAAF50039D437 /* TeenFifteen */,
+				F97475291C1CAAF50039D437 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F97475291C1CAAF50039D437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F97475281C1CAAF50039D437 /* TeenFifteen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F974752A1C1CAAF50039D437 /* TeenFifteen */ = {
+			isa = PBXGroup;
+			children = (
+				F974752B1C1CAAF50039D437 /* AppDelegate.swift */,
+				F974752D1C1CAAF50039D437 /* ViewController.swift */,
+				F974752F1C1CAAF50039D437 /* Main.storyboard */,
+				F97475321C1CAAF50039D437 /* Assets.xcassets */,
+				F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */,
+				F97475371C1CAAF50039D437 /* Info.plist */,
+			);
+			path = TeenFifteen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F97475271C1CAAF50039D437 /* TeenFifteen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F974753A1C1CAAF50039D437 /* Build configuration list for PBXNativeTarget "TeenFifteen" */;
+			buildPhases = (
+				F97475241C1CAAF50039D437 /* Sources */,
+				F97475251C1CAAF50039D437 /* Frameworks */,
+				F97475261C1CAAF50039D437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeenFifteen;
+			productName = TeenFifteen;
+			productReference = F97475281C1CAAF50039D437 /* TeenFifteen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F97475201C1CAAF50039D437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Mykyta Shytik";
+				TargetAttributes = {
+					F97475271C1CAAF50039D437 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F97475231C1CAAF50039D437 /* Build configuration list for PBXProject "TeenFifteen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F974751F1C1CAAF50039D437;
+			productRefGroup = F97475291C1CAAF50039D437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F97475271C1CAAF50039D437 /* TeenFifteen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F97475261C1CAAF50039D437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */,
+				F97475331C1CAAF50039D437 /* Assets.xcassets in Resources */,
+				F97475311C1CAAF50039D437 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F97475241C1CAAF50039D437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974752E1C1CAAF50039D437 /* ViewController.swift in Sources */,
+				F974752C1C1CAAF50039D437 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F974752F1C1CAAF50039D437 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F97475301C1CAAF50039D437 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F97475351C1CAAF50039D437 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F97475381C1CAAF50039D437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F97475391C1CAAF50039D437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F974753B1C1CAAF50039D437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeenFifteen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F974753C1C1CAAF50039D437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeenFifteen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F97475231C1CAAF50039D437 /* Build configuration list for PBXProject "TeenFifteen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97475381C1CAAF50039D437 /* Debug */,
+				F97475391C1CAAF50039D437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F974753A1C1CAAF50039D437 /* Build configuration list for PBXNativeTarget "TeenFifteen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F974753B1C1CAAF50039D437 /* Debug */,
+				F974753C1C1CAAF50039D437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F97475201C1CAAF50039D437 /* Project object */;
+}
