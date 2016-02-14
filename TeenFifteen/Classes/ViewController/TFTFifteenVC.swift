@@ -14,6 +14,7 @@ class TFTFifteenVC: UIViewController {
     var totalTime: NSTimeInterval = 0.0
     var tapCount = 0
     var timer: NSTimer?
+    var solved = false
     
     @IBOutlet private var timeLabel: UILabel?
     @IBOutlet private var tapLabel: UILabel?
@@ -23,25 +24,8 @@ class TFTFifteenVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(
-            0.1,
-            target: self,
-            selector: "timerTick",
-            userInfo: nil,
-            repeats: true
-        )
-        
-        fifteenView?.solveBlock = {
-            [weak self] (fView: TFTFifteenView) in
-            self?.timer?.invalidate()
-            self?.timer = nil
-        }
-        
-        fifteenView?.tapBlock = {
-            [weak self] (fView: TFTFifteenView) in
-            self?.tapCount += 1
-        }
+        setupFifteenView()
+        updateUI()
     }
     
     // MARK: - Public
@@ -49,6 +33,37 @@ class TFTFifteenVC: UIViewController {
     func timerTick() {
         totalTime += 0.1
         updateUI()
+    }
+    
+    // MARK: - Private (setup)
+    
+    private func setupFifteenView() {
+        fifteenView?.solveBlock = {
+            [weak self] fView in
+            self?.solved = true
+            self?.timer?.invalidate()
+            self?.timer = nil
+        }
+        
+        fifteenView?.tapBlock = {
+            [weak self] fView in
+            
+            if (self?.timer == nil) && !self!.solved {
+                self?.setupTimer()
+            }
+            
+            self?.tapCount += 1
+        }
+    }
+    
+    private func setupTimer() {
+        timer = NSTimer.scheduledTimerWithTimeInterval(
+            0.1,
+            target: self,
+            selector: "timerTick",
+            userInfo: nil,
+            repeats: true
+        )
     }
     
     // MARK: - Private
@@ -75,9 +90,7 @@ class TFTFifteenVC: UIViewController {
     // MARK: - IBAction
     
     @IBAction private func backButtonTap() {
-        dismissViewControllerAnimated(true) {
-            
-        }
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

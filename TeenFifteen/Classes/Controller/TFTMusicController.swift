@@ -12,6 +12,20 @@ import AVFoundation
 class TFTMusicController: UIView {
     
     static var player: AVAudioPlayer?
+    static var isSoundOn: Bool {
+        get {
+            return TFTUserDefaultsController.isSoundOn
+        }
+        
+        set {
+            TFTUserDefaultsController.isSoundOn = newValue
+            if TFTUserDefaultsController.isSoundOn {
+                player?.play()
+            } else {
+                player?.pause()
+            }
+        }
+    }
 
     static func start() {
         let session = AVAudioSession.sharedInstance()
@@ -29,7 +43,19 @@ class TFTMusicController: UIView {
         do {
             try player = AVAudioPlayer(contentsOfURL: soundFileURL, fileTypeHint: nil)
             player?.numberOfLoops = -1
-            player?.play()
+            if isSoundOn {
+                player?.play()
+            }
         } catch {}
+    }
+    
+    static func playIfNeeded() {
+        if isSoundOn {
+            player?.play()
+        }
+    }
+    
+    static func pause() {
+        player?.pause()
     }
 }

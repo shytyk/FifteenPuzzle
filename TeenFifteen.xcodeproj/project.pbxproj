@@ -28,6 +28,8 @@
 		F97475311C1CAAF50039D437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F974752F1C1CAAF50039D437 /* Main.storyboard */; };
 		F97475331C1CAAF50039D437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97475321C1CAAF50039D437 /* Assets.xcassets */; };
 		F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */; };
+		F9E33B991C711DB300F36D74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E33B981C711DB300F36D74 /* AudioToolbox.framework */; };
+		F9E33B9B1C71209D00F36D74 /* TFTUserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		F97475321C1CAAF50039D437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F97475351C1CAAF50039D437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F97475371C1CAAF50039D437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E33B981C711DB300F36D74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTUserDefaultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E33B991C711DB300F36D74 /* AudioToolbox.framework in Frameworks */,
 				F97464BF1C6FE27C00FF6F44 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				F97464BC1C6FE1F500FF6F44 /* TFTMusicController.swift */,
+				F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 				F97475321C1CAAF50039D437 /* Assets.xcassets */,
 				F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */,
 				F97475371C1CAAF50039D437 /* Info.plist */,
+				F9E33B981C711DB300F36D74 /* AudioToolbox.framework */,
 				F97464BE1C6FE27C00FF6F44 /* AVFoundation.framework */,
 			);
 			path = TeenFifteen;
@@ -260,6 +267,7 @@
 				F97464B01C6FA0DD00FF6F44 /* TFTMenuVC.swift in Sources */,
 				F97464AD1C6FA0DD00FF6F44 /* TFTItemView.swift in Sources */,
 				F97464AF1C6FA0DD00FF6F44 /* TFTFifteenVC.swift in Sources */,
+				F9E33B9B1C71209D00F36D74 /* TFTUserDefaultsController.swift in Sources */,
 				F97464AA1C6FA0DD00FF6F44 /* AppDelegate.swift in Sources */,
 				F97464AC1C6FA0DD00FF6F44 /* TFTHighlightButton.swift in Sources */,
 				F97464AB1C6FA0DD00FF6F44 /* TFTFifteenView.swift in Sources */,

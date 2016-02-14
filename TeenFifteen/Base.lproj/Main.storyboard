@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gW3-xk-KAJ">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -46,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="250" y="926"/>
         </scene>
-        <!--View Controller-->
+        <!--MenuVC-->
         <scene sceneID="b95-Fx-otl">
             <objects>
-                <viewController id="gW3-xk-KAJ" sceneMemberID="viewController">
+                <viewController id="gW3-xk-KAJ" customClass="TFTMenuVC" customModule="TeenFifteen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TsP-YV-ngl"/>
                         <viewControllerLayoutGuide type="bottom" id="RKZ-tp-YD5"/>
@@ -71,26 +72,27 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0l-l9-v77">
-                                                <rect key="frame" x="20" y="9" width="200" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="27"/>
                                                 <state key="normal" title="Play">
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="oTA-RI-U1B"/>
                                                     <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="coverVertical" id="zrb-Gg-DYb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="U0l-l9-v77" firstAttribute="top" secondItem="k1F-g4-58C" secondAttribute="top" constant="9" id="0hP-x4-2XO"/>
+                                            <constraint firstItem="U0l-l9-v77" firstAttribute="top" secondItem="k1F-g4-58C" secondAttribute="top" id="0hP-x4-2XO"/>
                                             <constraint firstAttribute="bottom" secondItem="MV9-BJ-UCt" secondAttribute="bottom" id="8Zb-iS-umZ"/>
                                             <constraint firstAttribute="trailing" secondItem="MV9-BJ-UCt" secondAttribute="trailing" id="E01-Mc-IPd"/>
                                             <constraint firstItem="MV9-BJ-UCt" firstAttribute="top" secondItem="k1F-g4-58C" secondAttribute="top" id="QCO-k4-fbE"/>
                                             <constraint firstItem="MV9-BJ-UCt" firstAttribute="leading" secondItem="k1F-g4-58C" secondAttribute="leading" id="Wq0-Xt-H99"/>
-                                            <constraint firstAttribute="trailing" secondItem="U0l-l9-v77" secondAttribute="trailing" constant="20" id="hkc-q9-M4y"/>
-                                            <constraint firstAttribute="bottom" secondItem="U0l-l9-v77" secondAttribute="bottom" constant="9" id="m8J-GB-pJc"/>
-                                            <constraint firstItem="U0l-l9-v77" firstAttribute="leading" secondItem="k1F-g4-58C" secondAttribute="leading" constant="20" id="rab-JA-349"/>
+                                            <constraint firstAttribute="trailing" secondItem="U0l-l9-v77" secondAttribute="trailing" id="hkc-q9-M4y"/>
+                                            <constraint firstAttribute="bottom" secondItem="U0l-l9-v77" secondAttribute="bottom" id="m8J-GB-pJc"/>
+                                            <constraint firstItem="U0l-l9-v77" firstAttribute="leading" secondItem="k1F-g4-58C" secondAttribute="leading" id="rab-JA-349"/>
                                             <constraint firstAttribute="height" constant="50" id="xpn-mV-Stx"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -106,23 +108,26 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-xL-okh">
-                                                <rect key="frame" x="20" y="9" width="200" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="27"/>
                                                 <state key="normal" title="Leaderboards">
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="pPc-e9-3vc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="YUm-xL-okh" secondAttribute="bottom" constant="9" id="6Mb-un-EmY"/>
-                                            <constraint firstItem="YUm-xL-okh" firstAttribute="top" secondItem="K9S-QO-2fZ" secondAttribute="top" constant="9" id="8sC-Bc-Los"/>
+                                            <constraint firstAttribute="bottom" secondItem="YUm-xL-okh" secondAttribute="bottom" id="6Mb-un-EmY"/>
+                                            <constraint firstItem="YUm-xL-okh" firstAttribute="top" secondItem="K9S-QO-2fZ" secondAttribute="top" id="8sC-Bc-Los"/>
                                             <constraint firstItem="6eT-hR-fTj" firstAttribute="leading" secondItem="K9S-QO-2fZ" secondAttribute="leading" id="Aov-Az-OHT"/>
                                             <constraint firstAttribute="trailing" secondItem="6eT-hR-fTj" secondAttribute="trailing" id="BoK-mC-cA4"/>
                                             <constraint firstAttribute="bottom" secondItem="6eT-hR-fTj" secondAttribute="bottom" id="Huh-s9-NSY"/>
-                                            <constraint firstAttribute="trailing" secondItem="YUm-xL-okh" secondAttribute="trailing" constant="20" id="K2d-KB-vHp"/>
+                                            <constraint firstAttribute="trailing" secondItem="YUm-xL-okh" secondAttribute="trailing" id="K2d-KB-vHp"/>
                                             <constraint firstAttribute="height" constant="50" id="P5O-om-1iZ"/>
-                                            <constraint firstItem="YUm-xL-okh" firstAttribute="leading" secondItem="K9S-QO-2fZ" secondAttribute="leading" constant="20" id="cZM-PU-78d"/>
+                                            <constraint firstItem="YUm-xL-okh" firstAttribute="leading" secondItem="K9S-QO-2fZ" secondAttribute="leading" id="cZM-PU-78d"/>
                                             <constraint firstItem="6eT-hR-fTj" firstAttribute="top" secondItem="K9S-QO-2fZ" secondAttribute="top" id="t0I-eO-pYA"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -138,23 +143,27 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIo-ry-W4S">
-                                                <rect key="frame" x="50" y="9" width="140" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="27"/>
                                                 <state key="normal" title="Settings">
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="FDH-BF-yp2"/>
+                                                    <action selector="soundButtonTap" destination="gW3-xk-KAJ" eventType="touchUpInside" id="IYR-g5-uPO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="tIo-ry-W4S" firstAttribute="top" secondItem="Sb2-0M-ngv" secondAttribute="top" constant="9" id="5YK-zp-xqM"/>
+                                            <constraint firstItem="tIo-ry-W4S" firstAttribute="top" secondItem="Sb2-0M-ngv" secondAttribute="top" id="5YK-zp-xqM"/>
                                             <constraint firstAttribute="trailing" secondItem="ril-fY-zv1" secondAttribute="trailing" id="HPU-Yf-4jL"/>
                                             <constraint firstItem="ril-fY-zv1" firstAttribute="leading" secondItem="Sb2-0M-ngv" secondAttribute="leading" id="JLr-fe-md9"/>
-                                            <constraint firstAttribute="bottom" secondItem="tIo-ry-W4S" secondAttribute="bottom" constant="9" id="OWU-cm-hiw"/>
-                                            <constraint firstItem="tIo-ry-W4S" firstAttribute="leading" secondItem="Sb2-0M-ngv" secondAttribute="leading" constant="50" id="QNw-32-XUk"/>
+                                            <constraint firstAttribute="bottom" secondItem="tIo-ry-W4S" secondAttribute="bottom" id="OWU-cm-hiw"/>
+                                            <constraint firstItem="tIo-ry-W4S" firstAttribute="leading" secondItem="Sb2-0M-ngv" secondAttribute="leading" id="QNw-32-XUk"/>
                                             <constraint firstItem="ril-fY-zv1" firstAttribute="top" secondItem="Sb2-0M-ngv" secondAttribute="top" id="dQo-Ok-3Wt"/>
                                             <constraint firstAttribute="height" constant="50" id="vhf-0D-EtZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="tIo-ry-W4S" secondAttribute="trailing" constant="50" id="y5j-Qr-mzz"/>
+                                            <constraint firstAttribute="trailing" secondItem="tIo-ry-W4S" secondAttribute="trailing" id="y5j-Qr-mzz"/>
                                             <constraint firstAttribute="bottom" secondItem="ril-fY-zv1" secondAttribute="bottom" id="zpV-VY-jti"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -190,6 +199,9 @@
                             <constraint firstAttribute="trailing" secondItem="P9u-3x-26H" secondAttribute="trailing" id="tk9-or-3Zu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="soundButton" destination="tIo-ry-W4S" id="TX7-DF-6mN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUa-y3-dZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
