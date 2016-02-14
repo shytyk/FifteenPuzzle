@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TFTItemView" customModule="TeenFifteen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-Bd-IfE" userLabel="Shadow Provider View">
+                    <rect key="frame" x="4" y="4" width="72" height="72"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-L5-cyO">
+                    <rect key="frame" x="4" y="4" width="72" height="72"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodtext.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-aT-Ciw">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-Uf-iYK">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="33"/>
+                            <color key="textColor" red="0.30615234374999944" green="0.25768400493421051" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Vp8-aT-Ciw" firstAttribute="top" secondItem="Qbf-L5-cyO" secondAttribute="top" id="0IC-FF-wIf"/>
+                        <constraint firstItem="q7y-Uf-iYK" firstAttribute="leading" secondItem="Qbf-L5-cyO" secondAttribute="leading" id="5BP-0d-mCD"/>
+                        <constraint firstAttribute="bottom" secondItem="Vp8-aT-Ciw" secondAttribute="bottom" id="9wW-tu-ldY"/>
+                        <constraint firstAttribute="trailing" secondItem="q7y-Uf-iYK" secondAttribute="trailing" id="Grv-hF-f6g"/>
+                        <constraint firstAttribute="bottom" secondItem="q7y-Uf-iYK" secondAttribute="bottom" id="JRA-x3-Xev"/>
+                        <constraint firstItem="Vp8-aT-Ciw" firstAttribute="leading" secondItem="Qbf-L5-cyO" secondAttribute="leading" id="Ltx-k4-tNn"/>
+                        <constraint firstItem="q7y-Uf-iYK" firstAttribute="top" secondItem="Qbf-L5-cyO" secondAttribute="top" id="l8a-BW-JLn"/>
+                        <constraint firstAttribute="trailing" secondItem="Vp8-aT-Ciw" secondAttribute="trailing" id="lkj-Ot-HuP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-uw-zSD" customClass="TFTHighlightButton" customModule="TeenFifteen" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    <connections>
+                        <action selector="itemButtonTap" destination="iN0-l3-epB" eventType="touchUpInside" id="w9G-Go-eW2"/>
+                        <action selector="itemButtonTouchDown" destination="iN0-l3-epB" eventType="touchUpInside" id="055-2f-nDm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qbf-L5-cyO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="B6O-sJ-LID"/>
+                <constraint firstAttribute="trailing" secondItem="Jrh-uw-zSD" secondAttribute="trailing" id="DS3-pE-pyh"/>
+                <constraint firstAttribute="bottom" secondItem="Qbf-L5-cyO" secondAttribute="bottom" constant="4" id="EH4-JO-wBg"/>
+                <constraint firstAttribute="trailing" secondItem="Qbf-L5-cyO" secondAttribute="trailing" constant="4" id="Exv-x6-NbW"/>
+                <constraint firstAttribute="bottom" secondItem="Jrh-uw-zSD" secondAttribute="bottom" id="G08-ub-Jbu"/>
+                <constraint firstItem="4dt-Bd-IfE" firstAttribute="bottom" secondItem="Qbf-L5-cyO" secondAttribute="bottom" id="KxD-2Q-eHt"/>
+                <constraint firstItem="Jrh-uw-zSD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MeR-1n-K4i"/>
+                <constraint firstItem="4dt-Bd-IfE" firstAttribute="leading" secondItem="Qbf-L5-cyO" secondAttribute="leading" id="UYM-6c-SMF"/>
+                <constraint firstItem="Jrh-uw-zSD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wib-M3-HtY"/>
+                <constraint firstItem="4dt-Bd-IfE" firstAttribute="trailing" secondItem="Qbf-L5-cyO" secondAttribute="trailing" id="kcu-kg-uzR"/>
+                <constraint firstItem="Qbf-L5-cyO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="pEk-ZQ-502"/>
+                <constraint firstItem="4dt-Bd-IfE" firstAttribute="top" secondItem="Qbf-L5-cyO" secondAttribute="top" id="zfL-5c-5L8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="itemContentView" destination="Qbf-L5-cyO" id="4Zx-um-xlo"/>
+                <outlet property="pressButton" destination="Jrh-uw-zSD" id="8pa-zP-7Ht"/>
+                <outlet property="shadowProviderView" destination="4dt-Bd-IfE" id="PYS-wE-zDt"/>
+                <outlet property="valueLabel" destination="q7y-Uf-iYK" id="YHE-fy-Ybd"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="357"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="woodtext.jpg" width="4000" height="3000"/>
+    </resources>
+</document>

@@ -7,17 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F974752C1C1CAAF50039D437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974752B1C1CAAF50039D437 /* AppDelegate.swift */; };
-		F974752E1C1CAAF50039D437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974752D1C1CAAF50039D437 /* ViewController.swift */; };
+		F97464AA1C6FA0DD00FF6F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97464951C6FA0DD00FF6F44 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464AB1C6FA0DD00FF6F44 /* TFTFifteenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97464971C6FA0DD00FF6F44 /* TFTFifteenView.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464AC1C6FA0DD00FF6F44 /* TFTHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97464981C6FA0DD00FF6F44 /* TFTHighlightButton.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464AD1C6FA0DD00FF6F44 /* TFTItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97464991C6FA0DD00FF6F44 /* TFTItemView.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464AE1C6FA0DD00FF6F44 /* TFTItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F974649A1C6FA0DD00FF6F44 /* TFTItemView.xib */; settings = {ASSET_TAGS = (); }; };
+		F97464AF1C6FA0DD00FF6F44 /* TFTFifteenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974649C1C6FA0DD00FF6F44 /* TFTFifteenVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464B01C6FA0DD00FF6F44 /* TFTMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974649D1C6FA0DD00FF6F44 /* TFTMenuVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464B11C6FA0DD00FF6F44 /* roguehero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F97464A01C6FA0DD00FF6F44 /* roguehero.ttf */; settings = {ASSET_TAGS = (); }; };
+		F97464B21C6FA0DD00FF6F44 /* boxbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A21C6FA0DD00FF6F44 /* boxbg.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B31C6FA0DD00FF6F44 /* boxbg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A31C6FA0DD00FF6F44 /* boxbg1.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B41C6FA0DD00FF6F44 /* itemimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A41C6FA0DD00FF6F44 /* itemimage.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B51C6FA0DD00FF6F44 /* lightwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A51C6FA0DD00FF6F44 /* lightwood.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B61C6FA0DD00FF6F44 /* woodbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A61C6FA0DD00FF6F44 /* woodbg.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B71C6FA0DD00FF6F44 /* woodtext.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F97464A71C6FA0DD00FF6F44 /* woodtext.jpg */; settings = {ASSET_TAGS = (); }; };
+		F97464B81C6FA0DD00FF6F44 /* knock.wav in Resources */ = {isa = PBXBuildFile; fileRef = F97464A91C6FA0DD00FF6F44 /* knock.wav */; settings = {ASSET_TAGS = (); }; };
+		F97464BA1C6FE13B00FF6F44 /* Game_Loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = F97464B91C6FE13B00FF6F44 /* Game_Loop.wav */; settings = {ASSET_TAGS = (); }; };
+		F97464BD1C6FE1F500FF6F44 /* TFTMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97464BC1C6FE1F500FF6F44 /* TFTMusicController.swift */; settings = {ASSET_TAGS = (); }; };
+		F97464BF1C6FE27C00FF6F44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97464BE1C6FE27C00FF6F44 /* AVFoundation.framework */; };
 		F97475311C1CAAF50039D437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F974752F1C1CAAF50039D437 /* Main.storyboard */; };
 		F97475331C1CAAF50039D437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97475321C1CAAF50039D437 /* Assets.xcassets */; };
 		F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F97464951C6FA0DD00FF6F44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F97464971C6FA0DD00FF6F44 /* TFTFifteenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTFifteenView.swift; sourceTree = "<group>"; };
+		F97464981C6FA0DD00FF6F44 /* TFTHighlightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTHighlightButton.swift; sourceTree = "<group>"; };
+		F97464991C6FA0DD00FF6F44 /* TFTItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTItemView.swift; sourceTree = "<group>"; };
+		F974649A1C6FA0DD00FF6F44 /* TFTItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFTItemView.xib; sourceTree = "<group>"; };
+		F974649C1C6FA0DD00FF6F44 /* TFTFifteenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTFifteenVC.swift; sourceTree = "<group>"; };
+		F974649D1C6FA0DD00FF6F44 /* TFTMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTMenuVC.swift; sourceTree = "<group>"; };
+		F97464A01C6FA0DD00FF6F44 /* roguehero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roguehero.ttf; sourceTree = "<group>"; };
+		F97464A21C6FA0DD00FF6F44 /* boxbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boxbg.jpg; sourceTree = "<group>"; };
+		F97464A31C6FA0DD00FF6F44 /* boxbg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boxbg1.jpg; sourceTree = "<group>"; };
+		F97464A41C6FA0DD00FF6F44 /* itemimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itemimage.jpg; sourceTree = "<group>"; };
+		F97464A51C6FA0DD00FF6F44 /* lightwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightwood.jpg; sourceTree = "<group>"; };
+		F97464A61C6FA0DD00FF6F44 /* woodbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodbg.jpg; sourceTree = "<group>"; };
+		F97464A71C6FA0DD00FF6F44 /* woodtext.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodtext.jpg; sourceTree = "<group>"; };
+		F97464A91C6FA0DD00FF6F44 /* knock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = knock.wav; sourceTree = "<group>"; };
+		F97464B91C6FE13B00FF6F44 /* Game_Loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Game_Loop.wav; sourceTree = "<group>"; };
+		F97464BC1C6FE1F500FF6F44 /* TFTMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTMusicController.swift; sourceTree = "<group>"; };
+		F97464BE1C6FE27C00FF6F44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F97475281C1CAAF50039D437 /* TeenFifteen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenFifteen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F974752B1C1CAAF50039D437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F974752D1C1CAAF50039D437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F97475301C1CAAF50039D437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97475321C1CAAF50039D437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F97475351C1CAAF50039D437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,12 +61,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97464BF1C6FE27C00FF6F44 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97464941C6FA0DD00FF6F44 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F97464951C6FA0DD00FF6F44 /* AppDelegate.swift */,
+				F97464BB1C6FE1D000FF6F44 /* Controller */,
+				F97464961C6FA0DD00FF6F44 /* View */,
+				F974649B1C6FA0DD00FF6F44 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F97464961C6FA0DD00FF6F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F97464971C6FA0DD00FF6F44 /* TFTFifteenView.swift */,
+				F97464981C6FA0DD00FF6F44 /* TFTHighlightButton.swift */,
+				F97464991C6FA0DD00FF6F44 /* TFTItemView.swift */,
+				F974649A1C6FA0DD00FF6F44 /* TFTItemView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F974649B1C6FA0DD00FF6F44 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F974649C1C6FA0DD00FF6F44 /* TFTFifteenVC.swift */,
+				F974649D1C6FA0DD00FF6F44 /* TFTMenuVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F974649E1C6FA0DD00FF6F44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F974649F1C6FA0DD00FF6F44 /* Font */,
+				F97464A11C6FA0DD00FF6F44 /* Image */,
+				F97464A81C6FA0DD00FF6F44 /* Sound */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F974649F1C6FA0DD00FF6F44 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F97464A01C6FA0DD00FF6F44 /* roguehero.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F97464A11C6FA0DD00FF6F44 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F97464A21C6FA0DD00FF6F44 /* boxbg.jpg */,
+				F97464A31C6FA0DD00FF6F44 /* boxbg1.jpg */,
+				F97464A41C6FA0DD00FF6F44 /* itemimage.jpg */,
+				F97464A51C6FA0DD00FF6F44 /* lightwood.jpg */,
+				F97464A61C6FA0DD00FF6F44 /* woodbg.jpg */,
+				F97464A71C6FA0DD00FF6F44 /* woodtext.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F97464A81C6FA0DD00FF6F44 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				F97464B91C6FE13B00FF6F44 /* Game_Loop.wav */,
+				F97464A91C6FA0DD00FF6F44 /* knock.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		F97464BB1C6FE1D000FF6F44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F97464BC1C6FE1F500FF6F44 /* TFTMusicController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F974751F1C1CAAF50039D437 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +166,13 @@
 		F974752A1C1CAAF50039D437 /* TeenFifteen */ = {
 			isa = PBXGroup;
 			children = (
-				F974752B1C1CAAF50039D437 /* AppDelegate.swift */,
-				F974752D1C1CAAF50039D437 /* ViewController.swift */,
+				F97464941C6FA0DD00FF6F44 /* Classes */,
+				F974649E1C6FA0DD00FF6F44 /* Resources */,
 				F974752F1C1CAAF50039D437 /* Main.storyboard */,
 				F97475321C1CAAF50039D437 /* Assets.xcassets */,
 				F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */,
 				F97475371C1CAAF50039D437 /* Info.plist */,
+				F97464BE1C6FE27C00FF6F44 /* AVFoundation.framework */,
 			);
 			path = TeenFifteen;
 			sourceTree = "<group>";
@@ -121,9 +234,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97464AE1C6FA0DD00FF6F44 /* TFTItemView.xib in Resources */,
+				F97464B71C6FA0DD00FF6F44 /* woodtext.jpg in Resources */,
+				F97464B11C6FA0DD00FF6F44 /* roguehero.ttf in Resources */,
+				F97464B21C6FA0DD00FF6F44 /* boxbg.jpg in Resources */,
 				F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */,
 				F97475331C1CAAF50039D437 /* Assets.xcassets in Resources */,
+				F97464B51C6FA0DD00FF6F44 /* lightwood.jpg in Resources */,
+				F97464B81C6FA0DD00FF6F44 /* knock.wav in Resources */,
 				F97475311C1CAAF50039D437 /* Main.storyboard in Resources */,
+				F97464BA1C6FE13B00FF6F44 /* Game_Loop.wav in Resources */,
+				F97464B41C6FA0DD00FF6F44 /* itemimage.jpg in Resources */,
+				F97464B31C6FA0DD00FF6F44 /* boxbg1.jpg in Resources */,
+				F97464B61C6FA0DD00FF6F44 /* woodbg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F974752E1C1CAAF50039D437 /* ViewController.swift in Sources */,
-				F974752C1C1CAAF50039D437 /* AppDelegate.swift in Sources */,
+				F97464B01C6FA0DD00FF6F44 /* TFTMenuVC.swift in Sources */,
+				F97464AD1C6FA0DD00FF6F44 /* TFTItemView.swift in Sources */,
+				F97464AF1C6FA0DD00FF6F44 /* TFTFifteenVC.swift in Sources */,
+				F97464AA1C6FA0DD00FF6F44 /* AppDelegate.swift in Sources */,
+				F97464AC1C6FA0DD00FF6F44 /* TFTHighlightButton.swift in Sources */,
+				F97464AB1C6FA0DD00FF6F44 /* TFTFifteenView.swift in Sources */,
+				F97464BD1C6FE1F500FF6F44 /* TFTMusicController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kate Kaminskaya (6ABU6499FL)";
 				INFOPLIST_FILE = TeenFifteen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "64852426-fc2d-47e7-a73f-fe62be11a14e";
 			};
 			name = Debug;
 		};
@@ -257,10 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kate Kaminskaya (6ABU6499FL)";
 				INFOPLIST_FILE = TeenFifteen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "64852426-fc2d-47e7-a73f-fe62be11a14e";
 			};
 			name = Release;
 		};
@@ -283,6 +417,7 @@
 				F974753C1C1CAAF50039D437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
