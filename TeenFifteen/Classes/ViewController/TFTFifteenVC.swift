@@ -43,6 +43,7 @@ class TFTFifteenVC: UIViewController {
             self?.solved = true
             self?.timer?.invalidate()
             self?.timer = nil
+            self?.onSolved()
         }
         
         fifteenView?.tapBlock = {
@@ -85,6 +86,95 @@ class TFTFifteenVC: UIViewController {
                 format: "%0.2d:%0.2d:%0.2d", hours, minutes, seconds
             )
         )
+    }
+    
+    // MARK: - Private (on solved)
+    
+    private func onSolved() {
+        if TFTLeaderboardController.canBeAdded(totalTime) {
+            onSolvedWithLeaderboard(hint: nil)
+        } else {
+            onSolvedWithoutLeaderboard()
+        }
+    }
+    
+    private func onSolvedWithLeaderboard(hint hint: String?) {
+        let controller = UIAlertController(
+            title: "Congratulations!",
+            message: composeMessage(hint: hint),
+            preferredStyle: .Alert
+        )
+        
+        controller.addTextFieldWithConfigurationHandler {
+            textField in
+            textField.placeholder = "Your name"
+        }
+        
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .Default,
+            handler: {
+                [weak self] _ in
+                guard let captSelf = self else {
+                    return
+                }
+                
+                guard let name = controller.textFields?.first?.text else {
+                    captSelf.onSolvedWithLeaderboard(hint: captSelf.hint())
+                    return
+                }
+                
+                if !TFTLeaderboardController.isNameValid(name) {
+                    captSelf.onSolvedWithLeaderboard(hint: captSelf.hint())
+                    return
+                }
+                
+                TFTLeaderboardController.add(
+                    timeInterval: captSelf.totalTime,
+                    name: name
+                )
+                
+                self?.dismissViewControllerAnimated(true, completion: nil)
+            }
+        )
+        
+        controller.addAction(okAction)
+        presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    private func onSolvedWithoutLeaderboard() {
+        let controller = UIAlertController(
+            title: "Congratulations!",
+            message: "Your result is " + totalTimeString(),
+            preferredStyle: .Alert
+        )
+        
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .Default,
+            handler: {
+                [weak self] _ in
+                self?.dismissViewControllerAnimated(true, completion: nil)
+            }
+        )
+        
+        controller.addAction(okAction)
+        presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    private func composeMessage(hint hint: String?) -> String {
+        var res = "Your result is " + totalTimeString() +
+        ". Please enter your name and it will be displayed in the leaderboard."
+        
+        if let hint = hint {
+            res = res + " " + hint
+        }
+        
+        return res
+    }
+    
+    private func hint() -> String {
+        return "Your name should contain from 4 to 7 alphanumeric characters."
     }
     
     // MARK: - IBAction

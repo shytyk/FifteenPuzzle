@@ -35,14 +35,18 @@ class TFTMusicController: UIView {
             try session.setActive(true)
         } catch {}
         
-        
         let bundle = NSBundle.mainBundle()
         let soundFilePath = bundle.pathForResource("Game_Loop", ofType: "wav")
         let soundFileURL = NSURL(fileURLWithPath: soundFilePath!)
         
         do {
-            try player = AVAudioPlayer(contentsOfURL: soundFileURL, fileTypeHint: nil)
+            try player = AVAudioPlayer(
+                contentsOfURL: soundFileURL,
+                fileTypeHint: nil
+            )
+            
             player?.numberOfLoops = -1
+            
             if isSoundOn {
                 player?.play()
             }

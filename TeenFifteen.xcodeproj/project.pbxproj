@@ -30,6 +30,7 @@
 		F97475361C1CAAF50039D437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97475341C1CAAF50039D437 /* LaunchScreen.storyboard */; };
 		F9E33B991C711DB300F36D74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E33B981C711DB300F36D74 /* AudioToolbox.framework */; };
 		F9E33B9B1C71209D00F36D74 /* TFTUserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */; settings = {ASSET_TAGS = (); }; };
+		F9E33B9D1C712B7400F36D74 /* TFTLeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9C1C712B7400F36D74 /* TFTLeaderboardController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		F97475371C1CAAF50039D437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9E33B981C711DB300F36D74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTUserDefaultsController.swift; sourceTree = "<group>"; };
+		F9E33B9C1C712B7400F36D74 /* TFTLeaderboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTLeaderboardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				F97464BC1C6FE1F500FF6F44 /* TFTMusicController.swift */,
 				F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */,
+				F9E33B9C1C712B7400F36D74 /* TFTLeaderboardController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				F97464AF1C6FA0DD00FF6F44 /* TFTFifteenVC.swift in Sources */,
 				F9E33B9B1C71209D00F36D74 /* TFTUserDefaultsController.swift in Sources */,
 				F97464AA1C6FA0DD00FF6F44 /* AppDelegate.swift in Sources */,
+				F9E33B9D1C712B7400F36D74 /* TFTLeaderboardController.swift in Sources */,
 				F97464AC1C6FA0DD00FF6F44 /* TFTHighlightButton.swift in Sources */,
 				F97464AB1C6FA0DD00FF6F44 /* TFTFifteenView.swift in Sources */,
 				F97464BD1C6FE1F500FF6F44 /* TFTMusicController.swift in Sources */,
@@ -384,9 +388,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kate Kaminskaya (6ABU6499FL)";
 				INFOPLIST_FILE = TeenFifteen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.fifteen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "64852426-fc2d-47e7-a73f-fe62be11a14e";
 			};
@@ -398,9 +402,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kate Kaminskaya (6ABU6499FL)";
 				INFOPLIST_FILE = TeenFifteen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.TeenFifteen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.fifteen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "64852426-fc2d-47e7-a73f-fe62be11a14e";
 			};

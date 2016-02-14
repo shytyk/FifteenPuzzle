@@ -78,7 +78,7 @@
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="oTA-RI-U1B"/>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchDown" id="co5-Cq-l57"/>
                                                     <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="coverVertical" id="zrb-Gg-DYb"/>
                                                 </connections>
                                             </button>
@@ -114,7 +114,7 @@
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="pPc-e9-3vc"/>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchDown" id="jnU-iB-29h"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -149,7 +149,7 @@
                                                     <color key="titleColor" red="0.3061523437" green="0.25768400489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchUpInside" id="FDH-BF-yp2"/>
+                                                    <action selector="knockAction" destination="gW3-xk-KAJ" eventType="touchDown" id="bgD-mp-pSY"/>
                                                     <action selector="soundButtonTap" destination="gW3-xk-KAJ" eventType="touchUpInside" id="IYR-g5-uPO"/>
                                                 </connections>
                                             </button>
