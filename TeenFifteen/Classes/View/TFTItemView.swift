@@ -45,26 +45,6 @@ class TFTItemView: UIView {
     }
     
     private func setupContent() {
-        pressButton?.highlightBlock = {
-            [weak self] (button: TFTHighlightButton, h: Bool) -> () in
-            let result = CGFloat(h ? 0.96 : 1.0)
-            UIView.animateWithDuration(
-                0.1,
-                delay: 0.0,
-                options: [
-                    UIViewAnimationOptions.BeginFromCurrentState
-                ],
-                animations: {
-                    self?.itemContentView?.layer.transform = CATransform3DMakeScale(
-                        result, result, 1
-                    )
-                    self?.shadowProviderView?.layer.transform = CATransform3DMakeScale(
-                        result, result, 1
-                    )
-                },
-                completion: nil
-            )
-        }
         shadowProviderView?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.1)
         shadowProviderView?.layer.cornerRadius = itemContentView?.layer.cornerRadius ?? 0.0
         shadowProviderView?.layer.shadowColor = UIColor.blackColor().CGColor

@@ -11,7 +11,7 @@ import AudioToolbox
 
 class TFTMenuVC: UIViewController {
     
-    @IBOutlet private weak var soundButton: UIButton!
+    @IBOutlet private weak var soundButton: UIButton?
     
     // MARK: - View lifecycle
     
@@ -24,7 +24,7 @@ class TFTMenuVC: UIViewController {
     
     private func updateSoundButtonTitle() {
         let title = "Sound: " + (TFTMusicController.isSoundOn ? "On" : "Off")
-        soundButton.setTitle(title, forState: .Normal)
+        soundButton?.setTitle(title, forState: .Normal)
     }
     
     // MARK: - IBAction
@@ -46,5 +46,25 @@ class TFTMenuVC: UIViewController {
         var soundID: SystemSoundID = 0
         AudioServicesCreateSystemSoundID(URL, &soundID)
         AudioServicesPlaySystemSound(soundID)
+    }
+    
+    @IBAction
+    private func aboutButtonTap() {
+        let controller = UIAlertController(
+            title: "15 v1.0",
+            message: "Author: Mykyta Shytik\nMusic: pianorock",
+            preferredStyle: .Alert
+        )
+        
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .Default,
+            handler: {
+                _ in
+            }
+        )
+        
+        controller.addAction(okAction)
+        presentViewController(controller, animated: true, completion: nil)
     }
 }

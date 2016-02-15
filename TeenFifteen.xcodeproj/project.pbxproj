@@ -31,6 +31,7 @@
 		F9E33B991C711DB300F36D74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E33B981C711DB300F36D74 /* AudioToolbox.framework */; };
 		F9E33B9B1C71209D00F36D74 /* TFTUserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */; settings = {ASSET_TAGS = (); }; };
 		F9E33B9D1C712B7400F36D74 /* TFTLeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9C1C712B7400F36D74 /* TFTLeaderboardController.swift */; settings = {ASSET_TAGS = (); }; };
+		F9E33B9F1C71427300F36D74 /* TFTLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E33B9E1C71427300F36D74 /* TFTLeaderboardVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		F9E33B981C711DB300F36D74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F9E33B9A1C71209D00F36D74 /* TFTUserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTUserDefaultsController.swift; sourceTree = "<group>"; };
 		F9E33B9C1C712B7400F36D74 /* TFTLeaderboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTLeaderboardController.swift; sourceTree = "<group>"; };
+		F9E33B9E1C71427300F36D74 /* TFTLeaderboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTLeaderboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				F974649C1C6FA0DD00FF6F44 /* TFTFifteenVC.swift */,
 				F974649D1C6FA0DD00FF6F44 /* TFTMenuVC.swift */,
+				F9E33B9E1C71427300F36D74 /* TFTLeaderboardVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				F97464AA1C6FA0DD00FF6F44 /* AppDelegate.swift in Sources */,
 				F9E33B9D1C712B7400F36D74 /* TFTLeaderboardController.swift in Sources */,
 				F97464AC1C6FA0DD00FF6F44 /* TFTHighlightButton.swift in Sources */,
+				F9E33B9F1C71427300F36D74 /* TFTLeaderboardVC.swift in Sources */,
 				F97464AB1C6FA0DD00FF6F44 /* TFTFifteenView.swift in Sources */,
 				F97464BD1C6FE1F500FF6F44 /* TFTMusicController.swift in Sources */,
 			);

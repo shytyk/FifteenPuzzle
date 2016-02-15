@@ -108,4 +108,30 @@ class TFTLeaderboardController: NSObject {
         
         return true
     }
+    
+    static func text(index index: Int) -> String {
+        guard let recs = records() where recs.count > index else {
+            return ""
+        }
+        
+        let rec = recs[index]
+        return (rec[UserDefaultLeaderboardNameKey] as! String)
+            + ": "
+            + totalTimeString(rec[UserDefaultLeaderboardTimeKey] as! NSTimeInterval)
+    }
+    
+    private static func totalTimeString(time: NSTimeInterval) -> String {
+        let ti = NSInteger(time)
+        
+        let seconds = ti % 60
+        let minutes = (ti / 60) % 60
+        let hours = (ti / 3600)
+        
+        return String(
+            NSString(
+                format: "%0.2d:%0.2d:%0.2d", hours, minutes, seconds
+            )
+        )
+    }
+
 }

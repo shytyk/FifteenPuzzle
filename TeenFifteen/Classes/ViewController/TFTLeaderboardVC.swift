@@ -9,27 +9,30 @@
 import UIKit
 
 class TFTLeaderboardVC: UIViewController {
+    
+    @IBOutlet private weak var firstButton: UILabel?
+    @IBOutlet private weak var secondButton: UILabel?
+    @IBOutlet private weak var thirdButton: UILabel?
+    
+    // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        showLeaderboard()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - Private
+    
+    private func showLeaderboard() {
+        let controller = TFTLeaderboardController.self
+        firstButton?.text = controller.text(index: 0)
+        secondButton?.text = controller.text(index: 1)
+        thirdButton?.text = controller.text(index: 2)
     }
-    */
-
+    
+    // MARK: - IBAction
+    
+    @IBAction private func backButtonTap() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
